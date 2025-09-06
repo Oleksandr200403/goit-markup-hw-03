@@ -261,8 +261,7 @@ img {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    padding-bottom: 72px;
-    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
 .team-title {
@@ -272,6 +271,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 
@@ -291,8 +291,17 @@ img {
     padding-bottom: 120px;
 }
 
+.team-item:first-child {
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .team-decor {
