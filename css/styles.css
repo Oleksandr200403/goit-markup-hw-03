@@ -228,7 +228,7 @@ img {
     padding: 100px 0;
 }
 
-.footer-logo {
+.footer-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -236,6 +236,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block; /* робить посилання "блочним" */
+    margin-bottom: 16px;   /* відступ між посиланням і параграфом */
 }
 
 .footer-text {
@@ -246,6 +248,7 @@ img {
     color: #f4f4fd;
     max-width: 264px;
     margin-left: 100px;
+    max-width: 264px;      /* максимальна ширина тексту */
 }
 
 .team-section {
