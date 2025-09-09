@@ -70,14 +70,13 @@ img {
 }
 
 .hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    display: flex; /* Використовуємо Flexbox для розташування внутрішнього контенту у колонку */
+    flex-direction: column; /* Напрямок розташування елементів вертикальний (зверху вниз) */
+    align-items: center; /* Вирівнювання елементів по центру вздовж поперечної осі (горизонтально) */
+    justify-content: center; /* Вирівнювання елементів по головній осі (вертикально), щоб центровано у блоці */
+    width: 1158px; /* Фіксована ширина контейнера 1158px */
+    margin: 0 auto; /* Центрування контейнера на сторінці горизонтально */
+    padding: 0 15px; /* Внутрішні відступи зліва і справа 15px, щоб контент не прилипав до країв */
 }
 
 .hero-title {
@@ -98,13 +97,13 @@ img {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
-    cursor: pointer;
-    padding: 16px 32px;
-    margin: 0 auto;
-    border-radius: 4px;
-    min-width: 169px;
+    cursor: pointer; /* Курсор змінюється на "руку" при наведенні, показуючи, що кнопка клікабельна */
+    padding: 16px 32px; /* Внутрішні відступи кнопки: 16px зверху/знизу і 32px зліва/справа */
+    margin: 0 auto; /* Центрування кнопки всередині контейнера */
+    border-radius: 4px; /* Закруглення кутів кнопки 4px */
+    min-width: 169px; /* Мінімальна ширина кнопки: 169px, щоб вона не була занадто вузькою */
     height: 56px;
-    border: none;
+    border: none; /* Прибираємо стандартну рамку браузера */
 }
 
 .order-button:hover,
@@ -143,9 +142,9 @@ img {
 }
 
 .sections-list {
-    display: flex;
+    display: flex; /* Використовуємо Flexbox для розташування контактів в рядок */
     gap: 24px;
-    list-style-type: none;
+    list-style-type: none; /* прибирає стандартні маркери списку */
 }
 
 .section-title {
@@ -158,7 +157,7 @@ img {
 }
 
 .section-item {
-    display: block;
+    display: block; /* Відображення як блочний елемент, щоб весь блок був клікабельним */
     width: calc((100% - 3*24px) / 3);
 }
 .section-text {
@@ -175,8 +174,8 @@ img {
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
+    display: flex; /* Використовуємо Flexbox для розташування контактів в рядок */
+    align-items: center; /* Вирівнювання елементів по центру вздовж поперечної осі (вертикально) */
     gap: 40px;
 }
 
@@ -187,7 +186,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-    display: block;
+    display: block; /* Відображення як блочний елемент, щоб весь блок був клікабельним */
 }
 
 .nav-link:hover,
@@ -197,19 +196,19 @@ img {
 
 
 .contacts {
-    margin-left: auto;
+    margin-left: auto; /* відсуває елемент вправо всередині батьківського контейнера */
     font-style: normal;
 }
 
 .contacts-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    display: flex; /* Використовуємо Flexbox для розташування контактів в рядок */
+    align-items: center; /* Вирівнювання елементів по центру вздовж поперечної осі (вертикально) */
+    gap: 40px; /* Відстань між контактними елементами – 40px */
 }
 
 .contacts-link {
-    display: block;
-    padding: 24px 0;
+    display: block; /* Відображення як блочний елемент, щоб весь блок був клікабельним */
+    padding: 24px 0; /* Внутрішні відступи зверху і знизу: 24px для зручного натискання */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -234,7 +233,7 @@ img {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    text-transform: uppercase; /* робимо весь текст великими літерами */
     color: #4d5ae5;
     display: inline-block; /* робить посилання "блочним" */
     margin-bottom: 16px;   /* відступ між посиланням і параграфом */
@@ -246,71 +245,81 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;
-    margin-left: 100px;
+    max-width: 264px; /* Максимальна ширина тексту 264px, щоб абзац не був занадто широким */
     max-width: 264px;      /* максимальна ширина тексту */
 }
 
 .team-section {
     background-color: #f4f4fd;
-    padding: 120px 0;
+    padding: 120px 0; /* Внутрішні відступи зверху і знизу: по 120px для створення великого простору навколо контенту */
 }
 
 .team-hero {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
+    letter-spacing: 0.02em; /* Інтервал між літерами трохи ширший для кращого сприйняття */
+    text-align: center; /* Вирівнювання тексту по центру блоку */
     color: #2e2f42;
-    text-transform: capitalize;
-    margin-bottom: 72px;
+    text-transform: capitalize; /* Перетворює першу букву кожного слова на велику */
+    margin-bottom: 72px; /* Великий відступ знизу: 72px відокремлює заголовок від наступного контенту */
 }
 
 .team-title {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
+    line-height: 1.2; /* Висота рядка: 1.2 забезпечує зручну відстань між рядками тексту */
+    letter-spacing: 0.02em; /* Інтервал між літерами трохи більший, для естетики */
+    text-align: center; /* Вирівнювання тексту по центру блоку */
     color: #2e2f42;
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Відступ знизу 8px створює простір між заголовком і описом */
 }
 
 
 .team-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
+    line-height: 1.5; /* Висота рядка: 1.5 забезпечує зручну відстань між рядками тексту */
+    letter-spacing: 0.02em; /* Інтервал між літерами трохи більший, для естетики */
+    text-align: center; /* Вирівнювання тексту по центру блоку */
     color: #434455;
 }
 
 .team-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    padding-bottom: 120px;
+    display: flex; /* Використовуємо Flexbox для розташування елементів у рядок */
+    gap: 24px; /* Відстань між елементами 24px */
+    justify-content: center; /* Центруємо елементи горизонтально всередині контейнера */
+    margin-bottom: 120px; /* Відступ знизу 120px, щоб створити простір між цим блоком і наступними елементами */
 }
 
+
+/* Застосовуємо специфічне закруглення лише для першого елемента списку команди */
+/* Порядок значень border-radius: top-left, top-right, bottom-right, bottom-left */
 .team-item:first-child {
     border-radius: 0px 0px 4px 4px;
 }
 
+
+ /* Базова ширина елемента у flex-контейнері:
+100% - загальна ширина проміжків (3 * 24px), ділимо на 4 елементи,
+щоб чотири елементи рівномірно розташовувалися в рядку */
+/* Тіні для елемента: додають легкий обєм і відокремлюють від фону */
 .team-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
     background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 1px 6px rgba(46, 47, 66, 0.08);
+    border-radius: 4px; /* Закруглені кути елемента радіусом 4px */
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), /* основна легка тінь знизу */
+                0px 1px 1px rgba(46, 47, 66, 0.16), /* додаткова тінь для глибини */
+                0px 1px 6px rgba(46, 47, 66, 0.08); /* розсіяна тінь для мякого ефекту */
 }
 
 .team-decor {
     padding: 32px 0px;
 }
 
+
+/* Внутрішні відступи зверху і знизу по 120px
+для створення великого простору навколо секції портфоліо */
 .portfolio-section {
     padding: 120px 0;
 }
@@ -318,45 +327,50 @@ img {
 .portfolio-hero {
     color: #2e2f42;
     font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 72px;
-}
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-    list-style-type: none;
-    align-items: center;
+    line-height: 1.11; /* Висота рядка 1.11 компактне вертикальне розташування тексту заголовка */
+    letter-spacing: 0.02em; /* Інтервал між літерами трохи більший, для естетики */
+    text-transform: capitalize; /* Перетворює першу букву кожного слова на велику */
+    text-align: center; /* Вирівнювання тексту по центру контейнера */
+    margin-bottom: 72px; /* Великий відступ знизу 72px відокремлює заголовок від наступного блоку */
 }
 
+.portfolio-list {
+    display: flex; /* Включаємо Flexbox для розташування елементів у рядок або стовпці */
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на наступний рядок, якщо не вистачає місця */
+    column-gap: 24px; /* Відстань між колонками (горизонтальний gap) */
+    row-gap: 48px; /* Відстань між рядками (вертикальний gap) */
+    list-style-type: none; /* Прибирає стандартні маркери списку, оскільки це ul або ol */
+    align-items: center; /* Вирівнює елементи по центру вздовж поперечної осі flex-контейнера */
+}
+
+
+/* Базова ширина елемента у flex-контейнері.
+       Використовується формула calc, щоб три елементи поміщалися в рядку з відступами.
+       100% загальна ширина контейнера,
+       48px сумарний простір між елементами (наприклад, gap),
+       ділимо на 3, щоб отримати ширину одного елемента. */
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-decor {
-    padding: 32px 16px;
-    border:  1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: 8px;
+    padding: 32px 16px; /* Внутрішні відступи: 32px зверху і знизу, 16px зліва і справа */
+    border:  1px solid #e7e9fc; /* Рамка навколо елемента: 1px, світло-синьо-сіра для візуального розділення */
+    border-top: none; /* Прибираємо верхню межу, щоб рамка не зливалася з попереднім елементом */
 }
 .portfolio-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-weight: 500; /* Вага шрифту: 500 трохи жирніший за нормальний, щоб виділяти заголовок */
+    line-height: 1.2; /* Висота рядка */
+    letter-spacing: 0.02em; /* Інтервал між літерами */
     color: #2e2f42;
-    text-transform: capitalize;
-    margin-bottom: 8px;
+    text-transform: capitalize; /* Перетворення тексту: перша буква кожного слова великою */
+    margin-bottom: 8px; /* Відступ знизу 8px створює простір між заголовком і наступним елементом */
 }
 
 .portfolio-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.5;  /* Висота рядка */
+    letter-spacing: 0.02em; /* Інтервал між літерами */
     color: #434455;
 }
